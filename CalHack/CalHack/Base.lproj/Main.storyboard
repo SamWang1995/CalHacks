@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="974" y="294"/>
         </scene>
-        <!--View Controller-->
+        <!--casual-->
         <scene sceneID="FwK-GH-Hn8">
             <objects>
-                <viewController id="2KF-c5-jR2" sceneMemberID="viewController">
+                <viewController id="2KF-c5-jR2" customClass="CasualViewController" customModule="CalHack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SwQ-BY-Xe5"/>
                         <viewControllerLayoutGuide type="bottom" id="LYR-JS-vwJ"/>
@@ -140,14 +140,26 @@
                     <view key="view" contentMode="scaleToFill" id="vom-dj-fUS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pictures" translatesAutoresizingMaskIntoConstraints="NO" id="5uG-tf-oON">
+                                <rect key="frame" x="60" y="92" width="240" height="412"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqy-kP-aZe">
+                                <rect key="frame" x="147" y="518" width="66" height="30"/>
+                                <state key="normal" title="click here"/>
+                                <connections>
+                                    <action selector="toGap:" destination="2KF-c5-jR2" eventType="touchUpInside" id="wqJ-Ot-4fX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GPR-jp-FDa"/>
+                    <navigationItem key="navigationItem" title="casual" id="GPR-jp-FDa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KD-su-UXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413.3333333333333" y="-317.13333333333333"/>
+            <point key="canvasLocation" x="1413" y="-318"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XNZ-be-qqK">
@@ -250,5 +262,6 @@
     </scenes>
     <resources>
         <image name="mainBackground" width="2048" height="1159"/>
+        <image name="pictures" width="640" height="1136"/>
     </resources>
 </document>
