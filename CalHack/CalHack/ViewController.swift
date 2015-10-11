@@ -13,12 +13,20 @@ import FBSDKLoginKit
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        //Add any override stuff here
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+
+        super.viewDidAppear(animated)
         // Do any additional setup after loading the view, typically from a nib.
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
+            performSegueWithIdentifier("toNext", sender: self)
         }
         else
         {
@@ -29,6 +37,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.delegate = self
         }
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toNext" {
+            let newVC = WomensViewController()
+            self.navigationController?.pushViewController(newVC, animated: true);
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,7 +78,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func returnUserData()
     {
-        // GraphAPI v2.4以降はデフォルトではemailは取得できないので、明示的にfieldsを指定する
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name,email"])
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
             
