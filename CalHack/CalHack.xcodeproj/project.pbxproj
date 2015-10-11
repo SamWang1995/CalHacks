@@ -16,6 +16,7 @@
 		222A8F541BC94250000C7104 /* CalHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A8F531BC94250000C7104 /* CalHackUITests.swift */; };
 		222A8F671BCA0126000C7104 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222A8F651BCA0126000C7104 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		222A8F681BCA0127000C7104 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222A8F661BCA0126000C7104 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		BB7FBA6C1BCA15B2000BE02B /* WomensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FBA6B1BCA15B2000BE02B /* WomensViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		222A8F551BC94250000C7104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222A8F651BCA0126000C7104 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		222A8F661BCA0126000C7104 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BB7FBA6B1BCA15B2000BE02B /* WomensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WomensViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				222A8F331BC94250000C7104 /* AppDelegate.swift */,
 				222A8F351BC94250000C7104 /* ViewController.swift */,
 				222A8F371BC94250000C7104 /* Main.storyboard */,
+				BB7FBA6B1BCA15B2000BE02B /* WomensViewController.swift */,
 				222A8F3A1BC94250000C7104 /* Assets.xcassets */,
 				222A8F3C1BC94250000C7104 /* LaunchScreen.storyboard */,
 				222A8F3F1BC94250000C7104 /* Info.plist */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				222A8F361BC94250000C7104 /* ViewController.swift in Sources */,
+				BB7FBA6C1BCA15B2000BE02B /* WomensViewController.swift in Sources */,
 				222A8F341BC94250000C7104 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +501,7 @@
 				222A8F5A1BC94250000C7104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		222A8F5B1BC94250000C7104 /* Build configuration list for PBXNativeTarget "CalHackTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +510,7 @@
 				222A8F5D1BC94250000C7104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		222A8F5E1BC94250000C7104 /* Build configuration list for PBXNativeTarget "CalHackUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				222A8F601BC94250000C7104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
