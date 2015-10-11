@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -40,6 +40,7 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-Rm-Tm3">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <animations/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="504" id="8yL-oo-wd5"/>
@@ -143,10 +144,14 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pictures" translatesAutoresizingMaskIntoConstraints="NO" id="5uG-tf-oON">
                                 <rect key="frame" x="60" y="92" width="240" height="412"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqy-kP-aZe">
-                                <rect key="frame" x="147" y="518" width="66" height="30"/>
-                                <state key="normal" title="click here"/>
+                                <rect key="frame" x="179" y="485" width="133" height="30"/>
+                                <animations/>
+                                <state key="normal" title="purchase this outfit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="toGap:" destination="2KF-c5-jR2" eventType="touchUpInside" id="wqJ-Ot-4fX"/>
                                 </connections>
@@ -161,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="1413" y="-318"/>
         </scene>
-        <!--View Controller-->
+        <!--business casual-->
         <scene sceneID="XNZ-be-qqK">
             <objects>
-                <viewController id="mqv-v9-ida" sceneMemberID="viewController">
+                <viewController id="mqv-v9-ida" customClass="BusinessCasualViewController" customModule="CalHack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FPB-fc-2Tb"/>
                         <viewControllerLayoutGuide type="bottom" id="PXS-8n-k1z"/>
@@ -172,19 +177,35 @@
                     <view key="view" contentMode="scaleToFill" id="51T-Dh-LJo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="businessCasual" translatesAutoresizingMaskIntoConstraints="NO" id="2eD-aA-rEQ">
+                                <rect key="frame" x="44" y="64" width="276" height="455"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfr-dF-xeN">
+                                <rect key="frame" x="179" y="510" width="133" height="30"/>
+                                <animations/>
+                                <state key="normal" title="purchase this outfit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBanananana:" destination="mqv-v9-ida" eventType="touchUpInside" id="N2Y-ZX-lbO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rhe-6n-wDN"/>
+                    <navigationItem key="navigationItem" title="business casual" id="rhe-6n-wDN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhL-o4-u9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675.7333333333331" y="-43.546666666666667"/>
+            <point key="canvasLocation" x="2675" y="-44"/>
         </scene>
-        <!--View Controller-->
+        <!--formal-->
         <scene sceneID="B8Y-LI-OqE">
             <objects>
-                <viewController id="8dR-Cg-K7f" sceneMemberID="viewController">
+                <viewController id="8dR-Cg-K7f" customClass="FormalViewController" customModule="CalHack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jtW-uo-hN9"/>
                         <viewControllerLayoutGuide type="bottom" id="RrB-yj-Jmz"/>
@@ -192,19 +213,35 @@
                     <view key="view" contentMode="scaleToFill" id="G5o-2S-oeg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banaFormal" translatesAutoresizingMaskIntoConstraints="NO" id="8Vj-Jw-YGn">
+                                <rect key="frame" x="80" y="64" width="240" height="454"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5H6-Fa-ryg">
+                                <rect key="frame" x="172" y="502" width="133" height="30"/>
+                                <animations/>
+                                <state key="normal" title="purchase this outfit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBananaRepublic:" destination="8dR-Cg-K7f" eventType="touchUpInside" id="lPw-bo-7qQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iae-w5-XOr"/>
+                    <navigationItem key="navigationItem" title="formal" id="iae-w5-XOr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LO-VO-QJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413.3333333333333" y="1014.8266666666667"/>
+            <point key="canvasLocation" x="1413" y="1014"/>
         </scene>
-        <!--View Controller-->
+        <!--semi-formal-->
         <scene sceneID="gMO-uV-zef">
             <objects>
-                <viewController id="QWk-rz-1ci" sceneMemberID="viewController">
+                <viewController id="QWk-rz-1ci" customClass="SemiFormalViewController" customModule="CalHack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M9W-GA-3Vd"/>
                         <viewControllerLayoutGuide type="bottom" id="NNX-hU-vhr"/>
@@ -212,19 +249,35 @@
                     <view key="view" contentMode="scaleToFill" id="FMj-Nr-PUC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banformal" translatesAutoresizingMaskIntoConstraints="NO" id="mRP-Er-n28">
+                                <rect key="frame" x="43" y="64" width="268" height="458"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC5-mc-pLj">
+                                <rect key="frame" x="178" y="518" width="133" height="30"/>
+                                <animations/>
+                                <state key="normal" title="purchase this outfit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBanana:" destination="QWk-rz-1ci" eventType="touchUpInside" id="zV3-fZ-Hl4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zga-EW-h9i"/>
+                    <navigationItem key="navigationItem" title="semi-formal" id="zga-EW-h9i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RN3-O2-a2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675.7333333333331" y="675.91999999999996"/>
+            <point key="canvasLocation" x="2675" y="675"/>
         </scene>
-        <!--View Controller-->
+        <!--BusinessFormalViewController-->
         <scene sceneID="Bts-nP-N3N">
             <objects>
-                <viewController id="iyn-gy-fjn" sceneMemberID="viewController">
+                <viewController title="BusinessFormalViewController" id="iyn-gy-fjn" customClass="BusinessFormalViewController" customModule="CalHack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cc4-03-8IY"/>
                         <viewControllerLayoutGuide type="bottom" id="uya-Rg-Tzd"/>
@@ -232,14 +285,30 @@
                     <view key="view" contentMode="scaleToFill" id="8Og-8d-Cl8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PA-gC-cb6">
+                                <rect key="frame" x="182" y="498" width="133" height="30"/>
+                                <animations/>
+                                <state key="normal" title="purchase this outfit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBana:" destination="iyn-gy-fjn" eventType="touchUpInside" id="Xrj-ci-8v7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nusinessformalbana" translatesAutoresizingMaskIntoConstraints="NO" id="WdE-jy-VQo">
+                                <rect key="frame" x="72" y="64" width="248" height="449"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pZT-hu-zZK"/>
+                    <navigationItem key="navigationItem" title="business formal" id="pZT-hu-zZK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrX-y4-jEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3070.4000000000001" y="303.88"/>
+            <point key="canvasLocation" x="3070" y="303"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9f0-Y1-kM8">
@@ -249,6 +318,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c0C-P7-kjc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -261,7 +331,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="banaFormal" width="640" height="1136"/>
+        <image name="banformal" width="640" height="1136"/>
+        <image name="businessCasual" width="640" height="1136"/>
         <image name="mainBackground" width="2048" height="1159"/>
+        <image name="nusinessformalbana" width="640" height="1136"/>
         <image name="pictures" width="640" height="1136"/>
     </resources>
 </document>

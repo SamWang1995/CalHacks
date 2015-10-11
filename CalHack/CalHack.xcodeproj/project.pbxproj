@@ -18,6 +18,10 @@
 		222A8F681BCA0127000C7104 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222A8F661BCA0126000C7104 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		224619391BCA5FC60005DDDB /* CasualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224619381BCA5FC60005DDDB /* CasualViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BB7FBA6C1BCA15B2000BE02B /* WomensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FBA6B1BCA15B2000BE02B /* WomensViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB7FBA6E1BCA8321000BE02B /* FormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FBA6D1BCA8321000BE02B /* FormalViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB7FBA701BCA8653000BE02B /* BusinessFormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FBA6F1BCA8653000BE02B /* BusinessFormalViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB7FBA721BCA88C8000BE02B /* SemiFormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FBA711BCA88C8000BE02B /* SemiFormalViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB7FBA741BCA8927000BE02B /* BusinessCasualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FBA731BCA8927000BE02B /* BusinessCasualViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		222A8F661BCA0126000C7104 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		224619381BCA5FC60005DDDB /* CasualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CasualViewController.swift; sourceTree = "<group>"; };
 		BB7FBA6B1BCA15B2000BE02B /* WomensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WomensViewController.swift; sourceTree = "<group>"; };
+		BB7FBA6D1BCA8321000BE02B /* FormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormalViewController.swift; sourceTree = "<group>"; };
+		BB7FBA6F1BCA8653000BE02B /* BusinessFormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessFormalViewController.swift; sourceTree = "<group>"; };
+		BB7FBA711BCA88C8000BE02B /* SemiFormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiFormalViewController.swift; sourceTree = "<group>"; };
+		BB7FBA731BCA8927000BE02B /* BusinessCasualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCasualViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +120,11 @@
 				222A8F331BC94250000C7104 /* AppDelegate.swift */,
 				222A8F351BC94250000C7104 /* ViewController.swift */,
 				222A8F371BC94250000C7104 /* Main.storyboard */,
+				BB7FBA731BCA8927000BE02B /* BusinessCasualViewController.swift */,
+				BB7FBA711BCA88C8000BE02B /* SemiFormalViewController.swift */,
+				BB7FBA6D1BCA8321000BE02B /* FormalViewController.swift */,
 				224619381BCA5FC60005DDDB /* CasualViewController.swift */,
+				BB7FBA6F1BCA8653000BE02B /* BusinessFormalViewController.swift */,
 				BB7FBA6B1BCA15B2000BE02B /* WomensViewController.swift */,
 				222A8F3A1BC94250000C7104 /* Assets.xcassets */,
 				222A8F3C1BC94250000C7104 /* LaunchScreen.storyboard */,
@@ -269,8 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7FBA721BCA88C8000BE02B /* SemiFormalViewController.swift in Sources */,
+				BB7FBA6E1BCA8321000BE02B /* FormalViewController.swift in Sources */,
+				BB7FBA701BCA8653000BE02B /* BusinessFormalViewController.swift in Sources */,
 				222A8F361BC94250000C7104 /* ViewController.swift in Sources */,
 				224619391BCA5FC60005DDDB /* CasualViewController.swift in Sources */,
+				BB7FBA741BCA8927000BE02B /* BusinessCasualViewController.swift in Sources */,
 				BB7FBA6C1BCA15B2000BE02B /* WomensViewController.swift in Sources */,
 				222A8F341BC94250000C7104 /* AppDelegate.swift in Sources */,
 			);
